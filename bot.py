@@ -5,7 +5,7 @@ TOKEN = '8732203357:AAFihc4vDf2LmUpJ2SsoQn8fuhof9BqBOHk'
 bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
-def start(message):
+def start(message): 
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     btn1 = types.KeyboardButton("👤 Мой профиль")
     btn2 = types.KeyboardButton("🔍 Поиск")
